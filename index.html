@@ -1,93 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Aniket Rajput | Cyber Security Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aniket Rajput | Information Security Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-
-<!-- HERO -->
-<section class="hero">
-  <div class="left">
-    <div class="terminal">
-      <p class="prompt">root@aniket:~#</p>
-      <p id="type"></p><span class="cursor">█</span>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="bg-overlay"></div>
+        <div class="particles"></div>
     </div>
 
-    <h1>Aniket Rajput</h1>
-    <p class="role">Cyber Security Learner | Web Pentesting | Ethical Hacking</p>
-  </div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Aniket<span>infosec.in</span></div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-  <div class="right">
-    <img src="images/profile.jpg" class="profile">
-  </div>
+   <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="highlight">Aniket Rajput</span>
+                </h1>
+                <h2 class="hero-subtitle">Information Security Specialist</h2>
+                <p class="hero-description">
+                    Ethical Hacker | Penetration Tester | Cybersecurity Consultant<br>
+                    Securing digital assets through advanced security testing and vulnerability assessment
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn-primary" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">
+                        <i class="fas fa-eye"></i> View My Work
+                    </button>
+                    <button class="btn-secondary" onclick="downloadResume()">
+                        <i class="fas fa-download"></i> Download Resume
+                    </button>
+                </div>
+            </div>
+            <div class="profile-container">
+                <div class="profile-wrapper">
+                    <img src="images/profile.jpg" alt="Aniket Rajput" class="profile-img">
+                    <div class="profile-glow"></div>
+                    <div class="profile-particles"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
 
-</section>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Hello! I'm Aniket Rajput, a passionate Information Security professional specializing in ethical hacking, penetration testing, and cybersecurity consulting. With extensive experience in identifying and mitigating security vulnerabilities, I help organizations protect their digital infrastructure from cyber threats.</p>
+                    
+                    <p>My expertise spans across web application security, network penetration testing, and security architecture design. I'm committed to staying updated with the latest cybersecurity trends and continuously enhancing my skills to combat evolving threats.</p>
+                    
+                    <div class="stats">
+                        <div class="stat">
+                            <h3>55+</h3>
+                            <p>Security Audits</p>
+                        </div>
+                        <div class="stat">
+                            <h3>15+</h3>
+                            <p>Vulnerabilities Found</p>
+                        </div>
+                        <div class="stat">
+                            <h3>10+</h3>
+                            <p>Certifications</p>
+                        </div>
+                        <div class="stat">
+                            <h3>150+</h3>
+                            <p>portswigger labs</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!-- ABOUT -->
-<section class="section">
-  <h2>About Me</h2>
-  <p>
-    I am a Cyber Security learner currently focused on <b>Web Application
-    Penetration Testing</b>. I am learning how to find and understand
-    vulnerabilities in web applications by practicing on legal labs.
-    My goal is to improve my skills in real-world web security testing.
-  </p>
-</section>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Penetration Testing</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Burp Suite</span>
+                        <span class="skill-item">Metasploit</span>
+                        <span class="skill-item">Nmap</span>
+                        <span class="skill-item">Wireshark</span>
+                        <span class="skill-item">OWASP ZAP</span>
+                        <span class="skill-item">Nessus</span>
+                        <span class="skill-item">Acunetix</span>
+                    </div>
+                </div>
+               
+                <div class="skill-category">
+                    <h3>Security Frameworks</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">OWASP Top 10</span>
+                        <span class="skill-item">NIST</span>
+                        <span class="skill-item">ISO 27001</span>
+                        <span class="skill-item">SOC 2</span>
+                        <span class="skill-item">GDPR</span>
+                        <span class="skill-item">PCI DSS</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Operating Systems</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Kali Linux</span>
+                        <span class="skill-item">Debian</span>
+                        <span class="skill-item">Ubuntu</span>
+                        <span class="skill-item">Windows</span>
+                        <span class="skill-item">CentOS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!-- WEB PENTESTING -->
-<section class="section">
-  <h2>Web Penetration Testing</h2>
-  <p>
-    In Web Penetration Testing, I learn how attackers find weaknesses
-    in websites and web applications. I practice identifying common
-    vulnerabilities such as SQL Injection, Cross-Site Scripting (XSS),
-    Authentication issues and Access Control problems, following the
-    OWASP Top 10 methodology.
-  </p>
-</section>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Security Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Web Application Security Audit</h3>
+                    <p>Comprehensive security assessment of enterprise web applications, identifying critical vulnerabilities and implementing robust security measures.</p>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon"><i class="fas fa-network-wired"></i></div>
+                    <h3>Network Penetration Testing</h3>
+                    <p>End-to-end network security testing for corporate infrastructure, including firewall testing, intrusion detection, and security architecture review.</p>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon"><i class="fas fa-lock"></i></div>
+                    <h3>Security Framework Implementation</h3>
+                    <p>Design and implementation of comprehensive security frameworks aligned with ISO 27001 and NIST standards for enterprise environments.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!-- SKILLS -->
-<section class="section">
-  <h2>Cyber Security Skills</h2>
-  <div class="grid">
-    <div class="card">Linux (Kali Linux)</div>
-    <div class="card">Networking Basics</div>
-    <div class="card">Web Application Security</div>
-    <div class="card">OWASP Top 10</div>
-    <div class="card">Web Pentesting Basics</div>
-    <div class="card">Burp Suite</div>
-  </div>
-</section>
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <h2 class="section-title">Professional Certifications</h2>
+            <div class="cert-grid">
+                <div class="cert-card" onclick="window.open('https://certs.armourinfosec.com/aiclsa/aniket-rajput/', '_blank')">
+                    <i class="fas fa-certificate"></i>
+                    <h3>AICLSA - Linux Security Administrator</h3>
+                    <p>Armour Infosec</p>
+                    <span class="cert-link">View Certificate →</span>
+                </div>
+                 <div class="cert-card" onclick="window.open('https://certs.armourinfosec.com/aicwse/aniket-rajput/', '_blank')">
+                    <i class="fas fa-certificate"></i>
+                    <h3>AICWSE - WordPress Security Expert</h3>
+                    <p>Armour Infosec</p>
+                    <span class="cert-link">View Certificate →</span>
+                </div>
+                
+                <div class="cert-card" onclick="window.open('https://certs.armourinfosec.com/aicwsa/aniket-rajput/', '_blank')">
+                    <i class="fas fa-certificate"></i>
+                    <h3>AICWSA - Web Security Administrator</h3>
+                    <p>Armour Infosec</p>
+                    <span class="cert-link">View Certificate →</span>
+                </div>
+                
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!-- TOOLS -->
-<section class="section">
-  <h2>Tools I Use</h2>
-  <div class="grid">
-    <div class="card">Kali Linux</div>
-    <div class="card">Burp Suite</div>
-    <div class="card">Nmap</div>
-    <div class="card">Gobuster</div>
-    <div class="card">Metasploit (Basic)</div>
-  </div>
-</section>
+    <!-- Contact Section -->
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>aniketrajput0923@gmail.com</span>
+                    </div>
+                    
+                    <div class="contact-item" onclick="window.open('https://github.com/Aniket-Rajput09', '_blank')">
+                        <i class="fab fa-github"></i>
+                        <span>github</span>
+                        <i class="fas fa-external-link-alt" style="margin-left: 8px; font-size: 0.8rem; opacity: 0.7;"></i>
+                    </div>
+                    
+                    <div class="contact-item" onclick="window.open('https://www.linkedin.com/in/aniket-rajput-965333343', '_blank')">
+                        <i class="fab fa-linkedin"></i>
+                        <span>linkedin</span>
+                        <i class="fas fa-external-link-alt" style="margin-left: 8px; font-size: 0.8rem; opacity: 0.7;"></i>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 6267884878</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!-- CERTIFICATE -->
-<section class="section">
-  <h2>My Certificate</h2>
-  <div class="cert-box">
-    <img src="images/cert1.jpg" alt="Certificate">
-  </div>
-</section>
+    <footer>
+        <p>&copy; 2024 Aniket Rajput. All rights reserved. | Securing the digital world, one vulnerability at a time.</p>
+    </footer>
 
-<footer>
-  © 2026 • Aniket Rajput • Cyber Security Portfolio
-</footer>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
-<button class="mode-toggle" onclick="toggleMode()">☀️ / 🌙</button>
-
-
